@@ -1,3 +1,7 @@
+# Express Typescript Starter
+
+Starter template for Express.js, Typescript, and the thirdweb TypeScript SDK
+
 ## Using This Template
 
 Create a project using this example:
