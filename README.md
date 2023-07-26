@@ -1,46 +1,56 @@
 # Express Typescript Starter
 
-Starter template for Express.js, Typescript, and the thirdweb TypeScript SDK
+Starter kit to build with Express and thirdweb without additional initial configuration.
 
-## Using This Template
+## Installation
 
-Create a project using this example:
+Install the template with [thirdweb create](https://portal.thirdweb.com/cli/create)
 
 ```bash
-npx thirdweb create --template express-typescript-starter
+  npx thirdweb create app --express --typescript --evm
 ```
+
+## Run Locally
 
 Install dependencies:
 
 ```bash
-npm install # npm
-yarn # yarn
+  yarn
 ```
 
-- Export your wallet private key from your wallet and add it to the .env file.
-
-```env
-PRIVATE_KEY=your_private_key
-```
-
-Using private keys as an env variable is vulnerable to attacks and is not best practice. We are doing it in this guide for the sake of brevity, but we strongly recommend using a [secret manager to store your private key](https://portal.thirdweb.com/sdk/set-up-the-sdk/securing-your-private-key).
-
-- Run the project:
+Start the server:
 
 ```bash
-npm run dev # npm
-yarn dev # yarn
+  yarn build
+  yarn start
 ```
 
-## Learn More
+## Environment Variables
 
-To learn more about thirdweb and Next.js, take a look at the following resources:
+To run this project, you will need to add the following environment variables to your .env file:
 
-- [thirdweb TypeScript Documentation](https://docs.thirdweb.com/typescript) - learn about our JavaScript/TypeScript SDK.
-- [thirdweb Portal](https://docs.thirdweb.com) - check our guides and development resources.
+```bash
+WALLET_PRIVATE_KEY=paste_your_private_key_here
+THIRDWEB_SECRET_KEY=paste_your_secret_key_here
+```
 
-You can check out [the thirdweb GitHub organization](https://github.com/thirdweb-dev) - your feedback and contributions are welcome!
+- Generate your `THIRDWEB_SECRET_KEY` via thirdweb's [dashboard](https://thirdweb.com/create-api-key).
 
-## Join our Discord!
+- For `WALLET_PRIVATE_KEY` export your wallet private key from your wallet.
 
-For any questions, suggestions, join our discord at [https://discord.gg/thirdweb](https://discord.gg/thirdweb).
+## Additional Resources
+
+- [Documentation](https://portal.thirdweb.com)
+- [Templates](https://thirdweb.com/templates)
+- [Video Tutorials](https://youtube.com/thirdweb_)
+- [Blog](https://blog.thirdweb.com)
+
+## Contributing
+
+Contributions and [feedback](https://feedback.thirdweb.com) are always welcome!
+
+Please visit our [open source page](https://thirdweb.com/open-source) for more information.
+
+## Need help?
+
+For help, join the [discord](https://discord.gg/thirdweb) or visit our [support page](https://support.thirdweb.com).

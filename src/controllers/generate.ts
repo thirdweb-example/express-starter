@@ -7,8 +7,11 @@ const generateSignature = async (req: Request, res: Response) => {
 
   // Initialize the SDK with your private key
   const sdk = ThirdwebSDK.fromPrivateKey(
-    process.env.PRIVATE_KEY as string,
-    "goerli"
+    process.env.WALLET_PRIVATE_KEY as string,
+    "goerli",
+    {
+      secretKey: process.env.THIRDWEB_SECRET_KEY,
+    }
   );
 
   // Address of the NFT collection
